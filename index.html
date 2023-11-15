@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Text Heatmap | Realtime heatmap visualization of Sentences</title>
+        <link rel="shortcut icon" type="image/png" href="../../img/favicon.png" />
+        <link rel="stylesheet" href="style.css" />
+        
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-12880923-1','auto');</script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+            <h1>2D Heat Map Visualization with letters of sentences</h1>
+            <div style="position: fixed;top: 75px;right: -1px;z-index: 10000;padding: 10px;background: rgba(0,0,0,.05);">
+                <script type="text/javascript">
+                /* <![CDATA[ */
+                (function() {
+                    var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://button.flattr.com/loader.js?mode=auto';
+                    t.parentNode.insertBefore(s, t);
+                })();
+                /* ]]> */
+                </script>
+                <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+                <g:plusone size="tall"></g:plusone>
+            </div>
+        </div>
+        <div id="customize">
+            <h2>Customization</h2>
+            <div id="customizearea">
+                <label>Fingertip size</label>
+                <select id="fingertip">
+                    <option>Small</option>
+                    <option selected>Normal</option>
+                    <option>Huge</option>
+                </select><br />
+                <label>Heatmap gradient</label>
+                <select id="gradient">
+                    <option selected>Standard</option>
+                    <option>Nightly</option>
+                    <option>Fanzy</option>
+                </select><br />
+                <label>Keyboard layout</label>
+                <select id="layout">
+                    <option value="ASSET">Asset</option>
+                    <option value="CARPALX_QFMLWY">Carpalx QFMLWY</option>
+                    <option value="COLEMAK">Colemak</option>
+                    <option value="DVORAK">Dvorak</option>
+                    <option value="DVORAK_PROGRAMMER">Dvorak Programmer</option>
+                    <option value="ERGODOX_COLEMAK">ErgoDox COLEMAK</option>
+                    <option value="ERGODOX_QWERTY">ErgoDox QWERTY</option>
+                    <option value="ERGODOX_DVORAK">ErgoDox DVORAK</option>
+                    <option value="LIIGOL">LIIGOL Layout</option>
+                    <option value="MINIMAK_4K">Minimak 4-Keys</option>
+                    <option value="MINIMAK_8K">Minimak 8-Keys</option>
+                    <option value="MINIMAK_12K">Minimak 12-Keys</option>
+                    <option value="NORMAN">Norman</option>
+                    <option value="QWERTY" selected>QWERTY</option>
+                    <option value="WORKMAN">Workman</option>
+                </select>
+                <!-- <div id="apply" class="button">
+                    Apply customizations
+                </div>-->
+            </div>
+        </div>
+        <div id="inputarea">
+            <h2>Please type something in the textbox or load a sample text :-)</h2>
+            <textarea id="typefield">heatmap.js keyboard - please type something</textarea>
+            <div id="presample">Load a text sample
+                <ul>
+                    <li>Sample 1</li>
+                    <li>Sample 2</li>
+                    <li>Sample 3</li>
+                    <li>Sample 4</li>
+                </ul>
+                </div>
+            </div>
+            <div id="keyboard">
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            var app = {};
+            app.config = {
+                exclude: true
+            };
+        </script>
+        <script src="heatmap.js"></script>
+        <script src="keyboard-layouts.js"></script>
+        <script src="app.js"></script>
+        <!-- IGNORE -->
+        <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+        <!-- Piwik -->
+        <script type="text/javascript">
+          var _paq = _paq || [];
+          _paq.push(['trackPageView']);
+          _paq.push(['enableLinkTracking']);
+          (function() {
+            var u=(("https:" == document.location.protocol) ? "https" : "http") + "://www.patrick-wied.at/helper/piwik/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', 1]);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+            g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        <noscript><p></p></noscript>
+        <!-- End Piwik Code -->
+        <!-- /IGNORE -->
+    </body>
+</html>
+
